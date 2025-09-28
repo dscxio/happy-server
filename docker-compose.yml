@@ -7,7 +7,7 @@ services:
     pull_policy: always
     environment:
       - NODE_ENV=production
-      - DATABASE_URL=postgresql://postgres:postgres@postgresss:5432/happy-server
+      - DATABASE_URL=postgresql://postgres:postgresss@postgres:5432/happy-server
       - REDIS_URL=redis://redis:6379
       - HANDY_MASTER_SECRET=${HANDY_MASTER_SECRET}
       - PORT=3050
