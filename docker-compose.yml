@@ -2,7 +2,7 @@ services:
   happy-server:
     image: ghcr.io/dscxio/happy-server:latest
     ports:
-      - "3000:3000"
+      - "3050:3050"
     restart: unless-stopped
     pull_policy: always
     environment:
@@ -10,7 +10,7 @@ services:
       - DATABASE_URL=postgresql://postgres:postgres@postgresss:5432/happy-server
       - REDIS_URL=redis://redis:6379
       - HANDY_MASTER_SECRET=${HANDY_MASTER_SECRET}
-      - PORT=3000
+      - PORT=3050
       - S3_HOST=minio
       - S3_PORT=9000
       - S3_USE_SSL=false
